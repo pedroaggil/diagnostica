@@ -5,10 +5,10 @@ CREATE TABLE tb_usuario (
 	cd_chave INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	nm_nome VARCHAR (256),
 	ds_email VARCHAR (100),
-	qt_ddd VARCHAR (3) INT,
-	qt_telefone VARCHAR (11),
+	qt_ddd INT,
+	qt_telefone INT,
 	ds_senha VARCHAR (16),
-	ds_tipotel,
-	ds_tipoimovel,
-	ds_compra
+	ds_tipotel INT,
+	ds_tipoimovel INT,
+	ds_compra INT
 );

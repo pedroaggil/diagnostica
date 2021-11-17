@@ -1,0 +1,91 @@
+body { /* cor de fundo */
+	background-color: #BDCAF0;
+}
+
+/*.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}*/
+
+.box { /* caixa branca de fundo */
+	width: 35vw; height: auto;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 { /* título, azul escuro */
+	color: #002145;
+}
+
+p.subtitulo { /* define a fonte e cor do subtitulo, no caso um cinza */
+    font: bold 13pt sans-serif;
+    color: #727A90;
+}
+
+div { /* espacinho entre os elementos */
+	padding: 15px;
+}
+
+input, select { /* estilo geral dos inputs */
+	border-radius: 5px;
+	background-color: ghostwhite;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	font: normal 12pt Arial;
+}
+
+/* links */
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #4169E1;
+}
+
+a:hover {
+	color: #E07358;
+}
+
+/* largura dos inputs */
+
+#nome {
+	width: 30vw;
+}
+
+input[type=email] {	width: 15vw; }
+
+input[type=password] {	width: 14.2vw; }
+
+input[type=number] { width: 9.3vw; }
+
+input[type=tel] { width: 20vw; }
+
+select {
+	text-align: center;
+	width: 30vw;
+}
+
+option {
+	text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+	width: 14.9vw;
+}
+
+label {
+	padding-left: 0.25vw;
+	font: 13pt sans-serif;
+}
+
+footer {
+	padding: 5px;
+	text-align: center;
+    color: #322D36;
+    font: italic 12pt sans-serif;
+}

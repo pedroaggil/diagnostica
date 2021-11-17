@@ -3,52 +3,66 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nos Informe</title>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/Estilo.css">
 </head>
 <body id="info">
-	<main>
-		<form action="php/form.php" method="post">
-			<div class="texto">
-			<input type="text" name="nome" placeholder="Nome" required><br>
-			<div id="login" display="inline-block">
-				<input type="email" name="email" placeholder="E-mail" required>
-				<input type="password" name="senha" placeholder="Senha" required>
-			</div>
-			<div id="telefone" display="inline-block">
-				<input type="number" name="ddd" placeholder="DDD" min="0" max="999" required>
-				<input type="tel" name="telefone" placeholder="Telefone" required>
-			</div>
-			</div>
-			<div class="botoes">
+	<div class="container">
+		<div class="box">
+			<h1>Locadora</h1>
+			<p class="subtitulo">Tarefa diagnóstica de Programação Web I</p>
+
+			<form action="php/form.php" method="post" id="formulario">
+				<div class="texto">
+					<input type="text" id="nome" name="nome" placeholder="Nome" required><br>
+				</div>
+				<div id="login" display="inline-block">
+					<input type="email" name="email" placeholder="E-mail" required>
+					<input type="password" name="senha" placeholder="Senha" required>
+				</div>
+				<div id="telefone" display="inline-block">
+					<input type="number" name="ddd" placeholder="DDD" min="0" max="999" required>
+					<input type="tel" name="telefone" placeholder="Telefone" required>
+				</div>
 				<div id="tipo" display="inline-block">
-					<input type="checkbox" name="tipo[]" value="Fixo" id="fixo"> Fixo
-					<input type="checkbox" name="tipo[]" value="Celular" id="cel"> Celular
-					<input type="checkbox" name="tipo[]" value="WhatsApp" id="wpp"> WhatsApp
+					<input type="checkbox" name="tipo[]" value="0" id="fixo">
+					<label class="tipo" for="fixo">Fixo</label>
+
+					<input type="checkbox" name="tipo[]" value="1" id="cel">
+					<label class="tipo" for="cel">Celular</label>
+
+					<input type="checkbox" name="tipo[]" value="2" id="wpp">
+					<label class="tipo" for="wpp">WhatsApp</label>
+
 				</div>
 				<div id="desejo" display="inline-block">
-					<input type="radio" name="desejo" value="Compra integral" id="comprar" checked>
+					<input type="radio" name="desejo" value="0" id="comprar" checked>
 					<label for="comprar">Comprar</label>
-
-					<input type="radio" name="desejo" value="Aluguel por temporada" id="alugT">
+	
+					<input type="radio" name="desejo" value="1" id="alugT">
 					<label for="alugt">Alugar por temporada</label>
 
-					<input type="radio" name="desejo" value="Alugar por tempo indefinido" id="alugD">
+					<input type="radio" name="desejo" value="2" id="alugD">
 					<label for="alugd">Alugar para moradia</label>
 				</div>
-				<select name="morada" required>
-					<option value="null">...</option>
-					<option value="Casa">Casa</option>
-					<option value="Sobrado">Sobrado</option>
-					<option value="Apartamento">Apartamento</option>
-					<option value="Terreno">Terreno</option>
-					<option value="Salão Comercial">Salão Comercial</option>
-				</select>
-			</div>
-			<div class="fim">
-				<input type="submit" value="Gravar"></input>
-				<input type="reset" value="Limpar"></input>
-			</div>
-		</form>
-	</main>
+				<div>
+					<select name="morada" required>
+						<option selected disabled value="null">...</option>
+						<option value="0">Casa</option>
+						<option value="1">Sobrado</option>
+						<option value="2">Apartamento</option>
+						<option value="3">Terreno</option>
+						<option value="4">Salão Comercial</option>
+					</select>
+				</div>
+				<div class="fim">
+					<input type="submit" value="Gravar"></input>
+					<input type="reset" value="Limpar"></input>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<p>&copy; 2021 · Pedro Gil & Anderson Muniz</p>
+		</footer>
+	</div>
 </body>
 </html>
