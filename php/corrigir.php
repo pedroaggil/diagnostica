@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nos Informe</title>
-	<link rel="stylesheet" type="text/css" href="../css/Estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 </head>
 <body id="info">
 	<div class="container">

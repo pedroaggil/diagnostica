@@ -17,10 +17,20 @@
 	} else {
 		echo "Espera um pouco, tá dando ansiedade...";
 		
-		$insert = 'INSERT INTO tb_usuario VALUES ($nome, $email, $ddd, $telefone, $senha, $tipotel, $morada, $desejo)';
+		$insert = "INSERT INTO tb_usuario VALUES (
+			null,
+			'".$_COOKIE['nome']."',
+			'".$_COOKIE['email']."',
+			'".$_COOKIE['ddd']."',
+			'".$_COOKIE['telefone']."',
+			'".$_COOKIE['senha']."',
+			'1',
+			'".$_COOKIE['morada']."',
+			'".$_COOKIE['desejo']."'
+		)";
 
-		if ($mysqli->query($insert)) {
-			header("Location: confirmação.html");
+		if ($conexao->query($insert)) {
+			header("Location: ../confirmacao.html");
 
 		} else {
 			echo "Calma lá meu patrão, deu problema aí! " . $mysqli->error;

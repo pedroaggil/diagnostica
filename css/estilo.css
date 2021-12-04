@@ -29,33 +29,36 @@ p.subtitulo { /* define a fonte e cor do subtitulo, no caso um cinza */
     color: #727A90;
 }
 
+p.confirmacao {
+	text-align: justify;
+	padding-left: 3.5vw; padding-right: 3.5vw;
+}
+
+span {
+	font: bold 12pt sans-serif;
+	color: #483D8B;
+}
+
 div { /* espacinho entre os elementos */
 	padding: 15px;
 }
 
-input, select { /* estilo geral dos inputs */
+input, select, button { /* estilo geral dos inputs */
 	border-radius: 5px;
 	background-color: ghostwhite;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	font: normal 12pt Arial;
 }
 
+input:hover, select:hover, button:hover, a:hover { color: #483D8B; }
+
 /* links */
 
-a:link, a:visited {
-	text-decoration: none;
-	color: #4169E1;
-}
-
-a:hover {
-	color: #E07358;
-}
+a:link, a:visited {	text-decoration: none; color: #000; }
 
 /* largura dos inputs */
 
-#nome {
-	width: 30vw;
-}
+#nome {	width: 30vw; }
 
 input[type=email] {	width: 15vw; }
 
@@ -70,13 +73,13 @@ select {
 	width: 30vw;
 }
 
-option {
-	text-align: center;
-}
+option { text-align: center; }
 
-input[type=submit], input[type=reset] {
+input[type=submit].fim, input[type=reset].fim {
 	width: 14.9vw;
 }
+
+input[type=submit]#confirmar, button#corrigir { width: 12vw; }
 
 label {
 	padding-left: 0.25vw;
